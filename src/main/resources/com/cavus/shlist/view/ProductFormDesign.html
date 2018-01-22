@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+  <meta name="package-mapping" content="com_vaadin:com.vaadin">
+ </head>
+ <body>
+  <vaadin-form-layout size-full>
+   <vaadin-text-field caption="Name" _id="name"></vaadin-text-field>
+   <vaadin-text-field caption="Description" _id="description"></vaadin-text-field>
+   <vaadin-slider caption="Quantity" min="1" responsive value="1" _id="quantity"></vaadin-slider>
+   <vaadin-horizontal-layout>
+    <vaadin-button style-name="primary" plain-text _id="save">
+      Save 
+    </vaadin-button>
+    <vaadin-button style-name="danger" responsive plain-text _id="remove">
+      Remove 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+  </vaadin-form-layout>
+ </body>
+</html>
