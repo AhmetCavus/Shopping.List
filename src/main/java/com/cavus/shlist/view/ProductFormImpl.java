@@ -3,7 +3,6 @@ package com.cavus.shlist.view;
 import com.cavus.shlist.model.IProduct;
 import com.vaadin.data.Binder;
 
-
 public class ProductFormImpl extends ProductFormDesign implements ProductForm {
 
     /**

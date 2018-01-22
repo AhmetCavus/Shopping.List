@@ -2,14 +2,8 @@ package com.cavus.shlist.view;
 
 import java.util.List;
 
-import org.springframework.stereotype.Component;
-
 import com.cavus.shlist.model.IProduct;
-import com.cavus.shlist.model.ProductService;
-import com.vaadin.data.Binder;
-import com.vaadin.ui.Button;
 
-@Component
 public class ProductViewImpl extends ProductViewDesign implements ProductView {
 
 	/**

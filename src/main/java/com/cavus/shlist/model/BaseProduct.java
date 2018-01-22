@@ -1,13 +1,17 @@
 package com.cavus.shlist.model;
 
 /**
- * A entity object, like in any other Java application. In a typical real world
- * application this could for example be a JPA entity.
+ * A entity object. In a typical production environment
+ * this could be a JPA entity.
  */
-@SuppressWarnings("serial")
 public class BaseProduct extends AbstractProduct {
 
-	public BaseProduct(long id, String name, String desc) {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	public BaseProduct(Long id, String name, String desc) {
 		setId(id);
 		setName(name);
 		setDescription(desc);

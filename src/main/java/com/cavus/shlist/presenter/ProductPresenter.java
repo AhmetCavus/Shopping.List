@@ -2,7 +2,6 @@ package com.cavus.shlist.presenter;
 
 import java.util.List;
 
-import com.cavus.shlist.model.BaseProduct;
 import com.cavus.shlist.model.IProduct;
 import com.cavus.shlist.model.ProductService;
 import com.cavus.shlist.view.ProductForm;
@@ -65,7 +64,7 @@ public class ProductPresenter implements ProductViewListener, ProductFormListene
 	@Override
 	public void onShowForm(ClickEvent e) {
 	    productView.clearSelection();
-	    productForm.setProduct(new BaseProduct(-1, "", ""));
+	    productForm.setProduct(service.createNewProduct());
 	    productForm.setVisible(true);
 	}
 

@@ -140,6 +140,13 @@ public class ProductService {
 		}
 		products.put(product.getId(), product);
 	}
+	
+	/**
+	 * Creates an empty product for the product form
+	 */
+	public IProduct createNewProduct() {
+		return new BaseProduct(null, "", "");
+	}
 
 	/**
 	 * Test data
@@ -147,13 +154,13 @@ public class ProductService {
 	public void generateData() {
 		if (findAll().isEmpty()) {
 			final IProduct [] products = new BaseProduct [] { 
-				new BaseProduct(1, "Schoko & Keks", "250g"),
-				new BaseProduct(2, "Gebäckstangen", "550g"),
-				new BaseProduct(3, "Milch", "3,5% Fett"),
-				new BaseProduct(4, "Kaffeepads Caffe Crema", "100 Pads"),
-				new BaseProduct(5, "Langkorn Reis", "1.00 kg"),
-				new BaseProduct(6, "Tempo Taschentücher", "3 x 80 Tücher"),
-				new BaseProduct(7, "Pasta Nudeln", "1 kg")
+				new BaseProduct(nextId++, "Schoko & Keks", "250g"),
+				new BaseProduct(nextId++, "Gebaeckstangen", "550g"),
+				new BaseProduct(nextId++, "Milch", "3,5% Fett"),
+				new BaseProduct(nextId++, "Kaffeepads Caffe Crema", "100 Pads"),
+				new BaseProduct(nextId++, "Langkorn Reis", "1.00 kg"),
+				new BaseProduct(nextId++, "Tempo Taschentuecher", "3 x 80 Tuecher"),
+				new BaseProduct(nextId++, "Pasta Nudeln", "1 kg")
 			};
 			for (IProduct product : products) {
 				product.setQuantity(1);
